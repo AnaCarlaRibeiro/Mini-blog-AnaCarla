@@ -16,7 +16,19 @@ export const Navbar = () => {
 
         </li>
         <li>
-          <NavLink to="/About" className={({isActive})=>(isActive? "active": "")} >
+          <NavLink to="/login" className={({isActive})=>(isActive? "active": "")}>
+            Entrar
+          </NavLink>
+
+        </li>
+        <li>
+          <NavLink to="/register" className={({isActive})=>(isActive? "active": "")}>
+            Registrar
+          </NavLink>
+
+        </li>
+        <li>
+          <NavLink to="/about" className={({isActive})=>(isActive? "active": "")} >
             About
           </NavLink>
           
