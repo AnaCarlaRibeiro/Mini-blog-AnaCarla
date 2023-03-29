@@ -9,6 +9,7 @@ input::placeholder,
 textarea::placeholder{
   font-family: 'Edu NSW ACT Foundation', cursive;
   color: #aaa;
+  font-size: 18px;
 
 }
 
@@ -44,12 +45,14 @@ label{
   flex-direction: column;
   margin-bottom: 1em;
 
+
 }
 
 label span{
   margin-bottom: .3em;
   font-weight: bold;
   text-align: left;
+  font-size: 20px;
 
 }
 
@@ -62,7 +65,7 @@ textarea{
   background-color: transparent;
 }
 
-button{
+.btn{
   background-color: #645276;
   color: white;
   text-align: center;
