@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import { useAuthentication } from "./hooks/hookAuthentication";
 import  CreatePost  from "./pages/CreatePost/CreatePoste"
 import { Dashboard } from "./pages/Dashboard/Dashboard";
+import { Search } from "./pages/Search/Search";
+import { Post } from "./pages/Post/Post";
 
 
 function App() {
@@ -41,10 +43,15 @@ return <p>Carregando...</p>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/search" element={<Search />} />
+              <Route path="/posts/:id" element={<Post />} />
+
+
               <Route path="/login" element={ <Login /> } />
               <Route path="/register" element={!user ? <Register /> : <Navigate to = '/'/>} />
               <Route path="/posts/create" element={user ? <CreatePost /> : <Navigate to = '/login'/>} />
               <Route path="/dashboard" element={user ? <Dashboard /> : <Navigate to = '/login'/>} />
+              
             </Routes>
           </div>
           <Footer />
