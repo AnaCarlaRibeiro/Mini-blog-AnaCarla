@@ -18,11 +18,11 @@ export const DivHome = styled.div`
   }
   .noposts{
     text-align: center;
-  }
-  p{
-    margin-bottom: 1.5em;
-  }
-  a{
-    padding: 10px 25px;
+    p{
+      margin-bottom: 1.5em;
+    }
+    a{
+      padding: 10px 25px;
+    }
   }
 `;

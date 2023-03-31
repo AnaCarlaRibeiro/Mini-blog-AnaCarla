@@ -4,9 +4,12 @@ import { useNavigate, Link } from "react-router-dom";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { PostDetail } from "../../components/postDetail/PostDetail";
 
+
+
 export const Home = () => {
   const [query, setquery] = useState("");
   const {documents:posts, loading}= useFetchDocuments("posts")
+  
   
   const navigate = useNavigate();
 
